@@ -6,9 +6,13 @@ This script prepares the Open-Platypus dataset for fine-tuning a language model,
 The Open-Platypus dataset is a collection of instruction-output pairs used for training language models. It is loaded from the Hugging Face datasets library
 ### Key Processing Steps:
 1. Token Count Analysis: Analyzes the distribution of token counts in instructions and outputs,
+2. 
 2.Data Filtering: Removes entries exceeding 2048 tokens to fit Llama 2's context window,
+
 3.Near-Deduplication: Uses sentence embeddings to remove near-duplicate entries, ensuring dataset diversity,
+
 4.Top-k Sampling: Selects the 1000 samples with the highest token counts,
+
 5.Chat Template Formatting: Applies a specific format to the instruction field for fine-tuning,
 
 Output
